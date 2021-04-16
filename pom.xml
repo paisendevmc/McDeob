@@ -23,12 +23,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.github.ShaneBeeStudios</groupId>
-            <artifactId>Reconstruct</artifactId>
-            <!--suppress MavenModelInspection -->
-            <version>master-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>com.github.fesh0r</groupId>
             <artifactId>fernflower</artifactId>
             <version>master-14255d2f89-1</version>
@@ -42,6 +36,21 @@
             <groupId>net.sf.jopt-simple</groupId>
             <artifactId>jopt-simple</artifactId>
             <version>5.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>9.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-tree</artifactId>
+            <version>9.1</version>
         </dependency>
     </dependencies>
 
