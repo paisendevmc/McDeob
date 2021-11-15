@@ -95,29 +95,6 @@
                 </configuration>
             </plugin>
             <!-- This is for packaging a macOS app -->
-            <plugin>
-                <groupId>sh.tak.appbundler</groupId>
-                <artifactId>appbundle-maven-plugin</artifactId>
-                <version>1.2.0</version>
-                <configuration>
-                    <mainClass>com.shanebeestudios.mcdeop.McDeob</mainClass>
-                    <jrePath>/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk</jrePath>
-                    <generateDiskImageFile>true</generateDiskImageFile>
-                    <diskImageFile>${project.build.directory}/${project.build.finalName}/${project.build.finalName}.dmg</diskImageFile>
-                    <diskImageInternetEnable>true</diskImageInternetEnable>
-                    <includeApplicationsSymlink>true</includeApplicationsSymlink>
-                    <dictionaryFile>Info.plist</dictionaryFile>
-                    <iconFile>images/1024.icns</iconFile>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>bundle</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
         <extensions>
             <extension>
